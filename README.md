@@ -9,4 +9,6 @@
 1. `$> cd hackathon/`
 1. `$> createdb hackathon_development`
 1. `$> bundle install --local`
+1. `$> cp config/database.yml.example config/database.yml
+1. Open `config/database.yml` and update the creds 
 1. Profit

@@ -1,0 +1,20 @@
+development: &defaults
+  adapter: postgresql
+  database: hackathon_development
+  username: alex
+  password: password
+  host: localhost
+  min_messages: warning
+
+test:
+  <<:       *defaults
+  database: hackathon_test
+  min_messages: error
+
+production:
+  <<:       *defaults
+  database: hackathon_production
+
+rake:
+  <<:       *defaults
+
