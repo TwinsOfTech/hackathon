@@ -35,5 +35,6 @@ group :development, :test do
   gem "request-log-analyzer", "~> 1.12.10"
   gem "byebug", "~> 2.3.1"
   gem 'quiet_assets', "~> 1.0.2"
+  gem 'letter_opener', "~> 1.1.0"
 end
 
