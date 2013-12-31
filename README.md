@@ -5,7 +5,8 @@
 
 # Setup
 
-  > git clone git@github.com:TwinsOfTech/hackathon.git
-  > cd hackathon/
-  > createdb hackathon_development
-  > bundle install --local
+1. `$> git clone git@github.com:TwinsOfTech/hackathon.git`
+1. `$> cd hackathon/`
+1. `$> createdb hackathon_development`
+1. `$> bundle install --local`
+1. Profit
