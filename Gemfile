@@ -1,42 +1,39 @@
 source 'https://rubygems.org'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
-
-# Use sqlite3 as the database for Active Record
 gem 'sqlite3'
-
-# Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
-
-# Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
-
-# Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
-
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
-
-# Use jquery as the JavaScript library
 gem 'jquery-rails'
-
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
+gem "devise", "~> 3.2.2"
+gem "pg", "~> 0.16.0"
+gem "enum_accessor",  "~> 0.2.0"
+gem "puma",    "~> 2.5.1"
+gem "newrelic_rpm", "~> 3.6.6.147"
+gem "bootstrap-sass-rails", "~> 3.0.0.2"
+gem "compass-rails", "~> 2.0.alpha.0"
+gem "paranoid2", "~> 1.1.3" # paranoid delete
+gem "pundit", "~> 0.2.1"
+gem "asset_sync", "~> 1.0.0"
+
+# Deployment Notification
+#gem "flowdock", "~> 0.3.1"
+#gem "grit", "~> 2.5.0"
+
+group :development, :test do
+  gem "better_errors", "~> 0.9.0"
+  gem "binding_of_caller", "~> 0.7.2"
+  gem "pry-rails", "~> 0.3.2"
+  gem "pry-debugger", "~> 0.2.2"
+  gem "meta_request", "~> 0.2.2"  # Chrome RailsPanel extension
+  gem "bullet", "~> 4.7.1"
+  gem "lol_dba", "~> 1.6.0"
+  gem "reek", "~> 1.3.4"
+  gem "request-log-analyzer", "~> 1.12.10"
+  gem "byebug", "~> 2.3.1"
+  gem 'quiet_assets', "~> 1.0.2"
 end
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
